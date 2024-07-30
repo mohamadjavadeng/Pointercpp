@@ -1,4 +1,5 @@
 #include <iostream>
+#include <conio.h>
 
 using namespace std;
 
@@ -30,5 +31,22 @@ int main(){
     char *pc;
     pc = &c;
     cout << "adress pc: " << pc << ", value of address pc :" << *pc << endl;
+    
+    double d = 12.0365;
+    double *pd;
+    pd = &d;
+    
+    cout << "adress pd: " << pd << ", value of address pd :" << *pd << endl;
+    //-------------------------------
+    // size of pointer
+    cout << "size of all pointers in order:" << endl;
+    cout << sizeof(p) << endl;
+    cout << sizeof(pf) << endl;
+    cout << sizeof(pc) << endl;
+    cout << sizeof(pd) << endl;
+    
+    cout << "all pointer have 8 byte size";
+    
+    // all pointer have 8 byte size
     return 0;
 }
