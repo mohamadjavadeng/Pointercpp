@@ -48,5 +48,16 @@ int main(){
     cout << "all pointer have 8 byte size";
     
     // all pointer have 8 byte size
+    cout << "new example" << endl;
+    int n = 3;
+    int *pn;
+    
+    pn = &n;
+    
+    cout << n << endl;
+    cout << *pn << endl;
+    cout << *&n << endl;
+    cout << pn << endl;
+    cout << &n;
     return 0;
 }
